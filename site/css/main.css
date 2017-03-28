@@ -188,23 +188,30 @@ button:hover {
     transition: width 2s;
 }
 
+
+.start a, .alarm a, .rules a {
+    text-decoration: none;
+}
+
 .dark:hover {
     width: 98%;
 }
 
-.dark a {
+.start a:hover, .alarm a:hover, .rules a:hover {
+    text-shadow: 5px 5px 25px #fff;
+}
+
+h2 {
     color: white;
     text-decoration: none;
     font-size: 50px;
-}
-
-.dark a:hover {
-    text-shadow: 5px 5px 25px #fff;
+    margin: 0px;
 }
 
 .dark p {
     margin-top: 5px;
-    color: #fff;;
+    color: #fff;
+    text-decoration: none;
 }
 
 .darker {
@@ -221,19 +228,10 @@ button:hover {
     width: 98%;
 }
 
-.darker a {
+.darker p, .mediumer p, .lighter p, .lighter2 p {
     color: white;
-    text-decoration: none;
     font-size: 30px;
-}
-
-.darker a:hover {
-    text-shadow: 5px 5px 25px #fff;
-}
-
-.darker p {
-    margin-top: 5px;
-    color: #fff;;
+    margin:0px;
 }
 
 .medium {
@@ -273,21 +271,13 @@ button:hover {
     padding-right: 20px;
     -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
     transition: width 2s;
+    margin-top: -5px;
 }
 
 .mediumer:hover {
     width: 93%;
 }
 
-.mediumer a {
-    color: white;
-    text-decoration: none;
-    font-size: 30px;
-}
-
-.mediumer a:hover {
-    text-shadow: 5px 5px 25px #fff;
-}
 
 .mediumer p {
     margin-top: 5px;
@@ -322,16 +312,6 @@ button:hover {
     width: 87%;
 }
 
-.lighter a {
-    color: white;
-    text-decoration: none;
-    font-size: 50px;
-}
-
-.lighter a:hover {
-    text-shadow: 5px 5px 25px #fff;
-}
-
 .lighter {
     width: 60%;
     background: url("../img/background3.2.png");
@@ -344,16 +324,6 @@ button:hover {
 
 .lighter:hover {
     width: 87%;
-}
-
-.lighter a {
-    color: white;
-    text-decoration: none;
-    font-size: 30px;
-}
-
-.lighter a:hover {
-    text-shadow: 5px 5px 25px #fff;
 }
 
 .lighter2 {
