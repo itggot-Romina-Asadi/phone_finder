@@ -68,6 +68,7 @@ body {
     -webkit-box-shadow: inset 0px 0px 68px 1px rgba(0,0,0,0.09);
     -moz-box-shadow: inset 0px 0px 68px 1px rgba(0,0,0,0.09);
     box-shadow: inset 0px 0px 68px 1px rgba(0,0,0,0.09);
+    height: 200px;
 }
 
 .submit {
@@ -83,6 +84,7 @@ h3 {
     color: #009688;
     padding-left: 10px;
     margin-bottom: 0px;
+    margin-top: 0px;
 }
 
 .standardregler p {
@@ -111,7 +113,7 @@ input {
     font-size: 17px;
     text-align: center;
     margin: 2px;
-    margin-top: 10px;
+    margin-top: 8px;
 }
 
 h1 {
@@ -340,7 +342,7 @@ h2 {
 
 @media screen and (max-height: 450px) {
     .dark, .medium {
-        height: 90px;
+        height: 100px;
     }
 
     .light {
@@ -368,20 +370,62 @@ h2 {
     .container2 {
         margin-top: 10%;
         text-align: center;
+        margin-left: 3%;
     }
 
     .signal, .submit {
         width: 95%;
         margin-left: 5%;
+        height: 200px;
     }
 
     .add {
-        text-align: left;
+        text-align: center;
     }
 
     .menu {
-        position: fixed;
-        bottom: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-left: 0;
+    }
+
+    .menu a {
+        text-decoration: none;
+    }
+
+    .darker p, .mediumer p, .lighter p, .lighter2 p {
+        color: #009688;
+        font-size: 20px;
+        margin: 0px;
+    }
+
+    .darker, .mediumer, .lighter, .lighter2 {
+        background: url("../img/none.png");
+        margin-top: 0px;
+    }
+
+    .darker {
+        padding-right: 40px;
+    }
+
+    .mediumer {
+        margin-left: -20px;
+    }
+
+    button {
+        width: 35%;
+        height: 35%;
+        margin-top: 0px;
+    }
+
+    input {
+        margin-top: 50px;
+        width: 90%;
+    }
+
+    .add_regler {
+        align-items: center;
     }
 }
 
