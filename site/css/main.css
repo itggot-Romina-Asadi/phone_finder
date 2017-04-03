@@ -26,6 +26,7 @@ body {
     flex-direction: column;
     flex-grow: 3;
     margin-left: 10px;
+    margin-top: -10px;
 }
 
 .alarmsignal {
@@ -81,7 +82,7 @@ body {
 h3 {
     color: #009688;
     padding-left: 10px;
-    margin-bottom: -1%;
+    margin-bottom: 0px;
 }
 
 .standardregler p {
@@ -105,33 +106,12 @@ input {
     margin-top: 20px;
 }
 
-.info {
-    background-color: white;
-    flex-grow: 1;
-    margin-left: 5px;
-    margin-right: -10px;
-    border: 1px solid #009688;
-    -webkit-box-shadow: inset 0px 0px 68px 1px rgba(0,0,0,0.09);
-    -moz-box-shadow: inset 0px 0px 68px 1px rgba(0,0,0,0.09);
-    box-shadow: inset 0px 0px 68px 1px rgba(0,0,0,0.09);
-    margin-bottom: 50px;
-    height: 20%;
-
-}
-
 .info p {
     color: #009688;
     font-size: 17px;
     text-align: center;
     margin: 2px;
     margin-top: 10px;
-}
-
-.specialtecken p {
-    color: #009688;
-    font-size: 100px;
-    text-align: center;
-    margin-top: 0px;
 }
 
 h1 {
@@ -360,7 +340,7 @@ h2 {
 
 @media screen and (max-height: 450px) {
     .dark, .medium {
-        height: 85px;
+        height: 90px;
     }
 
     .light {
@@ -382,7 +362,7 @@ h2 {
 
     .logos {
         text-align: center;
-        margin-right: 13%;
+        margin-right: 0;
     }
 
     .container2 {
@@ -399,8 +379,9 @@ h2 {
         text-align: left;
     }
 
-    .specialtecken p {
-        margin-bottom: 35%;
+    .menu {
+        position: fixed;
+        bottom: 0;
     }
 }
 
@@ -445,11 +426,7 @@ h2 {
         height: 75px;
     }
 
-    .specialtecken p {
-        margin-bottom: 34%;
-    }
-
-    .regler, .info {
+    .regler {
         margin-top: -30%;
         margin-bottom: 15%;
     }
@@ -485,12 +462,9 @@ h2 {
         margin-top: -15%;
     }
 
-    .specialtecken p {
-        margin-bottom: 14%;
-    }
-
-    .regler, .info {
+    .regler {
         margin-top: -13%;
+        margin-left: 5%;
     }
 
     input {
